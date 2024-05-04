@@ -8,7 +8,7 @@ export default function Menu() {
   const currentTabStyle = 'bg-blue-200'
 
   return (
-    <header className="mb-4">
+    <header className="p-4">
       <nav>
         <ul className="flex justify-center gap-4">
           {tabs.map((tab) => (
