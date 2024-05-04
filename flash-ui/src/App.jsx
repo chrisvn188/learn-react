@@ -1,3 +1,4 @@
+import CardDetails from './components/CardDetails.jsx'
 import Menu from './components/Menu.jsx'
 import OrderSummary from './components/OrderSummary.jsx'
 
@@ -6,6 +7,7 @@ function App() {
     <div className="app">
       <Menu />
       <OrderSummary />
+      <CardDetails />
     </div>
   )
 }
