@@ -1,5 +1,5 @@
 // eslint-disable-next-line react/prop-types
-export default function Button({ children, variant }) {
+export default function Button({ children, variant, icon }) {
   let style = ''
 
   switch (variant) {
@@ -15,6 +15,8 @@ export default function Button({ children, variant }) {
   }
 
   return (
-    <button className={`rounded-md capitalize ${style}`}>{children}</button>
+    <button className={`rounded-md capitalize ${style}`}>
+      {icon + ' ' + children}
+    </button>
   )
 }

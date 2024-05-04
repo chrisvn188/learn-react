@@ -1,16 +1,19 @@
 import Button from './components/Button.jsx'
+import Menu from './components/Menu.jsx'
 
 function App() {
   return (
     <>
-      <header className="text-center p-4 bg-slate-950 text-slate-100 font-bold text-xl uppercase tracking-wide">
-        Hello world
-      </header>
-      <main>
-        <Button variant="contained">like and subscribe</Button>
-        <Button variant="outlined">learn more</Button>
-        <Button variant="text">view demo</Button>
-      </main>
+      <Menu></Menu>
+      <Button variant="contained" icon="👹">
+        like and subscribe
+      </Button>
+      <Button variant="outlined" icon="🤡">
+        learn more
+      </Button>
+      <Button variant="text" icon="👿">
+        view demo
+      </Button>
     </>
   )
 }
