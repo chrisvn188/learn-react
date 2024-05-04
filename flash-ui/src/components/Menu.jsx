@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-export default function Menu() {
-  const tabs = ['My Account', 'Company', 'Team Members', 'Billing']
+const tabs = ['My Account', 'Company', 'Team Members', 'Billing']
 
+export default function Menu() {
   const [currentTab, setCurrentTab] = useState('Company')
 
   const currentTabStyle = 'bg-blue-200'
