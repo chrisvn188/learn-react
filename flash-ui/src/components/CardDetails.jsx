@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 // Make it possible to update the billing address (without deleting the other properties)
 export default function CardDetails() {
@@ -8,10 +8,6 @@ export default function CardDetails() {
     cvc: '424',
     country: 'Canada',
     postalCode: '42424',
-  })
-
-  useEffect(() => {
-    console.log(card)
   })
 
   return (
