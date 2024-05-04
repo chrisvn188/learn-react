@@ -2,6 +2,7 @@ import CardDetails from './components/CardDetails.jsx'
 import FAQs from './components/Faqs.jsx'
 import Menu from './components/Menu.jsx'
 import OrderSummary from './components/OrderSummary.jsx'
+import VideoPlayer from './components/VideoPlayer.jsx'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <OrderSummary />
       <CardDetails />
       <FAQs />
+      <VideoPlayer />
     </div>
   )
 }

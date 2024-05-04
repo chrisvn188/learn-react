@@ -31,10 +31,10 @@ export default function FAQs() {
             {faqs.map((faq, index) => (
               <Accordion
                 key={index}
+                index={index}
                 faq={faq}
                 isOpen={currentIndex === index ? isOpen : false}
                 setOpen={setOpen}
-                index={index}
                 setCurrentIndex={setCurrentIndex}
               />
             ))}
