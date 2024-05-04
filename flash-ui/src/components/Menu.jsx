@@ -3,11 +3,7 @@ import { useState } from 'react'
 export default function Menu() {
   const tabs = ['My Account', 'Company', 'Team Members', 'Billing']
 
-  const [currentTab, setState] = useState('Company')
-
-  const handleClick = (e) => {
-    setState(e.target.textContent)
-  }
+  const [currentTab, setCurrentTab] = useState('Company')
 
   const currentTabStyle = 'bg-blue-200'
 
@@ -19,9 +15,11 @@ export default function Menu() {
             <li
               className={`${
                 tab === currentTab ? currentTabStyle : ''
-              } py-2 px-4 rounded-md`}
+              } py-2 px-4 rounded-md cursor-pointer`}
               key={tab}
-              onClick={handleClick}>
+              onClick={() => {
+                setCurrentTab(tab)
+              }}>
               {tab}
             </li>
           ))}
